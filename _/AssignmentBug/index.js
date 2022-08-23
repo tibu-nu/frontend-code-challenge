@@ -12,7 +12,7 @@ function AssignmentBug({ filePath, children }) {
         In the component displayed below you will find an error. The menuItems
         are fetched in the MenuProvider but they don't show up in the consumer
         components one level down. Can you find and resolve the issue in the
-        code? You should only have to edit the files in the following
+        code? You should only have to edit one file in the following
         directory:&nbsp;
         <a
           className="font-mono border rounded-md p-1 bg-gray-100 text-xs"
