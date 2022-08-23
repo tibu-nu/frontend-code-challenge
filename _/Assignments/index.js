@@ -68,8 +68,8 @@ function Assignments({ children }) {
         <p className="mt-3 leading-5 text-base text-gray-700 max-w-2xl">
           Below you'll find a set of assignments for you to complete. Answers
           are temporarily stored in localStorage so be sure to have it enabled.
-          At the end you can click the "Send Answers" button this will open your
-          email client and send use the answers object.
+          At the end you can click the "Send Assessment" button this will send
+          the files in the components folder and the answers. Good luck!
         </p>
         <div className="mt-5">{children}</div>
         <div className="py-2">
