@@ -1,3 +1,11 @@
+{
+  /**
+   * NOT PART OF ASSIGNMENT
+   * This part of the code is not part of the assignment
+   */ 
+}
+
+import Answer from "../Answer";
 import Code from "../Code";
 
 const unkownAlgorithm = `// z = Array, y = Integer
@@ -29,20 +37,37 @@ function AssignmentAlgorithm({ children }) {
         what this function does? We disabled the selection because it's a
         assignment for the mind.
       </p>
-      <ul className="my-4 text-base text-gray-700 list-disc ml-3 space-y-1">
-        <li>
-          What does the variable{" "}
-          <span className="font-mono text-sm border px-1 rounded-md">v</span>{" "}
-          indicate?
-        </li>
-        <li>
-          What does the variable{" "}
-          <span className="font-mono text-sm border px-1 rounded-md">x</span>{" "}
-          represent?
-        </li>
-        <li>What would be the function name?</li>
-      </ul>
       <Code content={unkownAlgorithm} copyDisabled />
+      <div className="space-y-2">
+        <Answer
+          question={
+            <>
+              What does the variable{" "}
+              <span className="font-mono text-sm border px-1 rounded-md">
+                v
+              </span>{" "}
+              indicate?
+            </>
+          }
+          name="unknownAlgoA"
+        />
+        <Answer
+          question={
+            <>
+              What does the variable{" "}
+              <span className="font-mono text-sm border px-1 rounded-md">
+                x
+              </span>{" "}
+              represent?
+            </>
+          }
+          name="unknownAlgoB"
+        />
+        <Answer
+          question={<>What would be the function name?</>}
+          name="unknownAlgoC"
+        />
+      </div>
     </div>
   );
 }

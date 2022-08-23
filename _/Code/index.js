@@ -1,3 +1,9 @@
+{
+  /**
+   * NOT PART OF ASSIGNMENT
+   * This part of the code is not part of the assignment
+   */ 
+}
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 

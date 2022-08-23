@@ -1,5 +1,8 @@
 import Head from "next/head";
 import "../styles/globals.css";
+import dynamic from "next/dynamic";
+
+const AppContainer = dynamic(() => import("../_/AppContainer"), { ssr: false });
 
 function CodeChallengeApp({ Component, pageProps }) {
   return (
@@ -9,7 +12,9 @@ function CodeChallengeApp({ Component, pageProps }) {
         <meta name="description" content="The tibu code challenge" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Component {...pageProps} />
+      <AppContainer>
+        <Component {...pageProps} />
+      </AppContainer>
     </>
   );
 }
